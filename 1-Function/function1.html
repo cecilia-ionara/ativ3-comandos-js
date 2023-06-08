@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Function</h1>
+    <p>O produto da multiplicação de p1 por p2 é: </p>
+    <p id="demo"></p>
+    <script>
+        let p1 = Number(window.prompt('Qual o valor de p1?'))
+        let p2 = Number(window.prompt('Qual o valor de p2?'))
+
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+
+        let result = myFunction(p1, p2);
+        document.getElementById("demo").innerHTML = result;
+    </script>
+
+</body>
+
+</html>
