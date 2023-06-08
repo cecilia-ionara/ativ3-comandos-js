@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Function</title>
 </head>
 
 <body>
-    <h1>Function</h1>
-    <h1>JavaScript Functions</h1>
-    <p>Using a function as a variable:</p>
+    <h1 class="titulo">Function</h1>
 
-    <p id="demo"></p>
+    <p class="paragrafo" id="demo"></p>
 
     <script>
-        let text = "The temperature is " + toCelsius(77) + " Celsius.";
+        let c = Number(window.prompt('Qual o valor deseja converter de Fahrenheit para Celsius?'))
+
+        let text = "Essa temperatura é " + toCelsius(c) + " Celsius.";
         document.getElementById("demo").innerHTML = text;
 
         function toCelsius(fahrenheit) {

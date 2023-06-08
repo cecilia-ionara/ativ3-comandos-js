@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Find</title>
 </head>
 
 <body>
     <h1 class="titulo">Find</h1>
-    <p class="paragrafo">find() returns the value of the first element in an array that passes a test (provided by a
-        function):</p>
+    
+    <p class="paragrafo">Coletando o primeiro valor que seja maior de idade</p>
 
     <p class="paragrafo" id="demo"></p>
 
     <script>
-        const ages = [3, 10, 18, 20];
+        let a = Number(prompt('Qual a idade a?'))
+        let b = Number(prompt('Qual a idade b?'))
+        let c = Number(prompt('Qual a idade c?'))
+        let d = Number(prompt('Qual a idade d?'))
 
+        const ages = [a, b, c, d];
+        
         document.getElementById("demo").innerHTML = ages.find(checkAge);
 
         function checkAge(age) {

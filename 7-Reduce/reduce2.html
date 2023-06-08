@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Reduce</title>
 </head>
 
 <body>
     <h1 class="titulo">Reduce</h1>
-    <p>Compute the sum of the rounded numbers in an array.</p>
+    <p>Calculando a soma dos números arredondados em uma matriz</p>
 
     <p id="demo"></p>
 
     <script>
-        const numbers = [15.5, 2.3, 1.1, 4.7];
+        let a = parseFloat(prompt('Qual o valor de a?'))
+        let b = parseFloat(prompt('Qual o valor de b?'))
+        let c = parseFloat(prompt('Qual o valor de c?'))
+        let d = parseFloat(prompt('Qual o valor de d?'))
+
+        const numbers = [a, b, c, d];
 
         document.getElementById("demo").innerHTML = numbers.reduce(getSum, 0);
 

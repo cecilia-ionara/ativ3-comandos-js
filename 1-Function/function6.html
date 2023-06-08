@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+
     <title>Function</title>
 </head>
 
 <body>
-    <h1>Function</h1>
+    <h1 class="titulo">Function</h1>
 
-    <p>Outside myFunction() carName is undefined.</p>
-
-    <p id="demo1"></p>
-    <p id="demo2"></p>
+    <p class="paragrafo" id="demo1"></p>
+    <p class="paragrafo" id="demo2"></p>
 
     <script>
         let text = "Outside: " + typeof carName;
         document.getElementById("demo1").innerHTML = text;
 
         function myFunction() {
-            let carName = "Volvo";
+            let carName = prompt('Qual o nome do carro?')
+
             let text = "Inside: " + typeof carName + " " + carName;
             document.getElementById("demo2").innerHTML = text;
         }

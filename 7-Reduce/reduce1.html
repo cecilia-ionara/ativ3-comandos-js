@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Reduce</title>
 </head>
 
 <body>
     <h1 class="titulo">Reduce</h1>
-    <p>Subtract the numbers in the array, starting from the left:</p>
+    <p>Subtraindo os números da matriz, começando pela esquerda</p>
 
     <p id="demo"></p>
 
     <script>
-        const numbers = [175, 50, 25];
+        let a = Number(prompt('Qual o valor de a?'))
+        let b = Number(prompt('Qual o valor de b?'))
+        let c = Number(prompt('Qual o valor de c?'))
+
+        const numbers = [a, b, c];
+
         document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
 
         function myFunc(total, num) {

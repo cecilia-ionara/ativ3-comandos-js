@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Filter</title>
 </head>
 
 <body>
-    <h1 class="titulo">Filter() Method</h1>
+    <h1>Filter()</h1>
 
-    <p>Click "Test" to get every element in the array that has a value above this number:</p>
+    <p>Clique em "Teste" para obter todos os elementos na matriz que possuem um valor acima deste número:</p>
 
     <p><input type="number" id="ageToCheck" value="30"></p>
-    <button onclick="myFunction()">Test</button>
+    <button onclick="myFunction()">Teste</button>
 
     <p id="demo"></p>
 
     <script>
-        const ages = [32, 33, 12, 40];
+     let a = Number(prompt('Qual a idade a?'))
+        let b = Number(prompt('Qual a idade b?'))
+        let c = Number(prompt('Qual a idade c?'))
+        let d = Number(prompt('Qual a idade d?'))
+
+        const ages = [a, b, c, d];
 
         function checkAge(age) {
             return age > document.getElementById("ageToCheck").value;
