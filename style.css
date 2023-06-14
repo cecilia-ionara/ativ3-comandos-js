@@ -4,7 +4,6 @@ body {
     background-color: #a2d2ff;
 }
 
-
 h1 {
     font-family: 'Roboto Slab',
         serif;
@@ -12,6 +11,10 @@ h1 {
 }
 
 p {
+    font: 16pt Arial;
+}
+
+.paragrafo {
     font: 16pt Arial;
 }
 
@@ -24,4 +27,14 @@ a {
     font: 18pt Arial;
     font-weight: 600;
     line-height: 1.5;
+}
+
+button {
+    font-size: 15pt;
+    background-color: #bbd0ff;
+    padding: 10px;
+}
+
+#quantidade{
+    padding: 10px;
 }

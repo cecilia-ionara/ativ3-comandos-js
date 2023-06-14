@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Aplicação</title>
+</head>
+
+<body>
+    <h1>Aplicação: Calculadora de valor</h1>
+
+    <label class="paragrafo" for="quantidade">Digite a quantidade de produtos que deseja comprar:</label>
+    <input type="number" id="quantidade"><br>
+
+    <button onclick="somaNumeros()">Calcular Soma</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function somaNumeros() {
+            var quantidadeNumeros = parseInt(document.getElementById("quantidade").value);
+            var numeros = [];
+
+            for (var i = 0; i < quantidadeNumeros; i++) {
+                var numero = parseFloat(prompt("Digite o preço do produto " + (i + 1) + ":"));
+                numeros.push(numero);
+            }
+
+            var soma = numeros.reduce(function (total, num) {
+                return total + num;
+            });
+
+            document.getElementById("resultado").textContent = `Suas compras foram de: R$ ${soma.toFixed(2)}`;
+        }
+    </script>
+
+</body>
+
+</html>
